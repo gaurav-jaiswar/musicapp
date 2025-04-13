@@ -13,6 +13,9 @@ GetList mylist = GetList();
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+  ]);
   mylist.getfiles();
   initListeners();
   runApp(const MyApp());
